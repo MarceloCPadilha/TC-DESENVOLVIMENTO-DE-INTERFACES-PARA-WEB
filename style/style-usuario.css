@@ -28,7 +28,7 @@ fieldset {
     margin-bottom: 20px;
 }
 
-legend {
+legend , h2{
     color: red;
     font-weight: bold;
     padding: 0 10px;
@@ -110,3 +110,4 @@ button {
 button:hover {
     background: darkred;
 }
+
