@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Usuário</title>
+    <link rel="stylesheet" href="../style/style-usuario.css">
+    <link rel="stylesheet" href="style-header.css">
+</head>
+<body>
+    <!-- <audio autoplay loop>
+        <source src="../style/Mukbang - The Soundlings.mp3" type="audio/mpeg">
+    </audio> -->
+    <header class="topo">
+        <div class="logo">
+            <img src="../img/image.png" alt="">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Compras</a></li>
+                <li><a href="#" target="_blank">Sobre nós</a></li>
+                <li><a href="#" target="_blank">Info</a></li>
+            </ul>
+        </nav>
+        <button class="bt" onclick="window.open('./html/login-cadastro.html')">Fazer Login/Cadastrar</button>
+
+    </header>
+    <div class="container">
+        <h1>Minha Conta</h1>
+        <div>
+            <h2>Dados do Usuário</h2>
+            <div class="usuario">
+                <img src="../img/roberto.png" alt="Foto do usuário" class="foto">
+                <div class="dados">
+                    <p><strong>Nome:</strong> ROBERTO DOS SANTOS OLIVEIRA</p>
+                    <p><strong>Email:</strong> ROBERTODOSSANTOSOLIVEIRA@email.com</p>
+                    <p class="saldo">
+                        R$ 250,00
+                        <span class="info">&#9432;</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cartoes-cadastrados">
+            <h2>Cartões Cadastrados</h2>
+            <div class="cartao">
+                <h3>&#128179; Visa Final 4589</h3>
+                <p>Titular: ROBERTO DOS SANTOS OLIVEIRA</p>
+                <p>Validade: 08/2028</p>
+            </div>
+            <div class="cartao">
+                <h3>&#128179; Mastercard Final 7321</h3>
+                <p>Titular: ROBERTO DOS SANTOS OLIVEIRA</p>
+                <p>Validade: 12/2027</p>
+            </div>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Adicionar Cartão de Crédito</legend>
+                <label>Número do Cartão</label>
+                <input type="text">
+                <label>Nome no Cartão</label>
+                <input type="text">
+                <label>Validade</label>
+                <input type="month">
+                <label>CVV</label>
+                <input type="password">
+                <button type="submit">Salvar Cartão</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
