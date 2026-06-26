@@ -1,0 +1,21 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    background: #333;;
+}
+
+.div-footer {
+    background: red;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
