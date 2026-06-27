@@ -145,7 +145,7 @@ nav,
 
 .dropdown {
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 3px);
     right: 0;
     width: 180px;
     list-style: none;
