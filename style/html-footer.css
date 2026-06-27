@@ -1,21 +1,43 @@
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: #333;
+    background: #1f1f1f;
     color: white;
-    text-align: center;
-    background: #333;;
+    padding: 20px 10px;
+    margin-top: 40px;
 }
 
-.div-footer {
-    background: red;
-    width: 75%;
-    height: 75%;
-    top: 50%;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%, -50%);
+.footer-container {
+    text-align: center;
+}
+
+.footer-bloco {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin: 10px 20px;
+    text-align: left;
+}
+
+.footer-bloco h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+.footer-bloco a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-bloco a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
 }
