@@ -6,13 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Usuário</title>
     <link rel="stylesheet" href="../style/style-usuario.css">
-    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="../style/style-header-logado.css">
 </head>
 <body>
     <!-- <audio autoplay loop>
         <source src="../style/Mukbang - The Soundlings.mp3" type="audio/mpeg">
     </audio> -->
+    <header class="topo">
+        <div class="logo">
+            <img src="../img/image.png" alt="">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Compras</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Info</a></li>
+            </ul>
+        </nav>
+        <div class="bt">
+                ROBERTO
+                <ul class="dropdown">
+                    <li><a href="usuario.html">Perfil</a></li>
+                    <li><a href="logout.html">LOG OUT</a></li>
+                </ul>
+</div>
 
+    </header>
 
     <div class="container">
         <h1>Minha Conta</h1>
@@ -56,7 +76,7 @@
                 <input type="month">
                 <label>CVV</label>
                 <input type="password">
-                <button type="submit">Salvar Cartão</button>
+                <button type="submit" class="usuario-button">Salvar Cartão</button>
             </fieldset>
         </form>
     </div>
