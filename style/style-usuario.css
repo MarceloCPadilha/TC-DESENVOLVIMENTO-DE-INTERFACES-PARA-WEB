@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #111;
-    color: white;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -19,19 +19,22 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: red;
+    color: #0066cc;
 }
 
 fieldset {
-    border: 2px solid red;
+    border: 1px solid #ccc;
     padding: 15px;
     margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
 }
 
-legend , h2{
-    color: red;
+legend,
+h2 {
+    color: #0066cc;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .usuario {
@@ -43,7 +46,7 @@ legend , h2{
 .foto {
     width: 120px;
     height: 120px;
-    border: 3px solid red;
+    border: 2px solid #ccc;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -54,14 +57,14 @@ legend , h2{
 
 .saldo {
     font-size: 22px;
-    color: #00ff00;
+    color: green;
     font-weight: bold;
 }
 
 .info {
     position: relative;
     cursor: pointer;
-    color: red;
+    color: #0066cc;
 }
 
 .info:hover::after {
@@ -70,18 +73,20 @@ legend , h2{
     top: 25px;
     left: 0;
     width: 220px;
-    background: black;
-    color: white;
+    background: #fff;
+    color: #333;
     padding: 10px;
-    border: 1px solid red;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .cartao {
-    background: #222;
-    border: 1px solid red;
+    background: #fff;
+    border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 label {
@@ -93,21 +98,22 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    background: #222;
-    color: white;
-    border: 1px solid red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
 }
 
-button {
+.usuario-button {
     width: 100%;
     padding: 12px;
-    background: red;
+    background: #0066cc;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background: darkred;
+    background: #0052a3;
 }
-

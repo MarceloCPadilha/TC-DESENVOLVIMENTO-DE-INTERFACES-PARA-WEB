@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.topo {
+    overflow: visible;
+    background: #333;
+    height: 10vh;
+    margin-bottom: 20px;
+}
+
+.logo {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+.logo img {
+    height: 60px;
+    left: 50%;
+    position: relative;
+}
+
+.topo nav {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 12px;
+    border-right: solid 1px #fff;
+}
+
+.menu li a:hover {
+    color: #f1d116;
+}
+
+.menu li:last-child a {
+    border-right: none;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.logo,
+nav,
+.bt {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ===========================
+   BOTÃO / MENU DO USUÁRIO
+   =========================== */
+
+.bt {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    height: 50%;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background: #165bf1;
+    border-radius: 200px;
+    cursor: pointer;
+    user-select: none;
+    overflow: visible;
+    z-index: 100;
+}
+
+.bt::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: inherit;
+    z-index: -2;
+    background: conic-gradient(
+        from var(--angle),
+        red,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        magenta,
+        red
+    );
+    opacity: 0;
+    animation: girar 2s linear infinite paused;
+    transition: opacity .3s;
+}
+
+.bt::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: inherit;
+    background: #165bf1;
+    z-index: -1;
+}
+
+.bt:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+}
+
+@keyframes girar {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+/* ===========================
+   MENU SUSPENSO
+   =========================== */
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 3px);
+    right: 0;
+    width: 180px;
+    list-style: none;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    display: none;
+    overflow: hidden;
+}
+
+.bt:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border: none;
+    transition: background .2s;
+}
+
+.dropdown li a:hover {
+    background: #f1f1f1;
+}
