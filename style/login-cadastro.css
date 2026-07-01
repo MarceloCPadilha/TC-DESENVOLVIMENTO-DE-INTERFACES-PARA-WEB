@@ -1,0 +1,204 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+body {
+    /* #130212 - #2b0428*/
+    background: #120014;
+    background-size: cover;
+}
+
+/* background color da div-principal tem que ser o mesmo que a dos forms */
+.div-principal, .login, .cadastro {
+    background: #1d0622;
+}
+
+.div-principal {
+    position: absolute;
+    width: 60vw;
+    height: 75vh;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+}
+span, a{
+    text-decoration: none;
+    color: thistle;
+    font-size: 2rem;
+}
+span a span {
+    font-size: 1.5rem;
+    padding: auto;
+    height: 100%;
+}
+
+.cobrir {
+    z-index: 25;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #662fc4, #5a2c84);
+    position: absolute;
+    transform: translateX(0);
+    transition: transform 0.8s ease-in-out;
+}
+.cobrir button {
+    margin-top: 15px;
+}
+.cobrir.esquerda {
+    transform: translateX(100%);
+}
+
+.dentro-de-cobrir {
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.mudar-btn {
+    margin: 0 auto;
+}
+
+input:not([type=checkbox]), button {
+    display: block;
+}
+
+input:not([type=checkbox]):focus {
+    outline: none;
+    border-color: #c084fc;
+    box-shadow: 0 0 8px #7c3aed;
+}
+
+input:not([type=checkbox]) {
+    background: #3b0f46;
+    border: 1px solid #5b1a6b;
+    color: #f5e9ff;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #a855f7;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+}
+
+.cadastro input[type=checkbox] {
+    display: inline;
+}
+
+form {
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.login, .cadastro {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.8s ease-in-out, z-index 0s ease-in-out 0.4s;
+}
+
+.login {
+    z-index: 10;
+    transform: translateX(0%);
+}
+.cadastro {
+    z-index: 1;
+    transform: translateX(0%);
+}
+
+.login.esconder {
+    z-index: 1;
+    transform: translateX(100%);
+}
+.cadastro.mostrar {
+    z-index: 10;
+    transform: translateX(100%);
+}
+
+.brilho{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 60vw;
+    height: 75vh;
+}
+
+.brilho::before{
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 18px;
+    background: conic-gradient(
+        from var(--angle),
+        #7c3aed,
+        #00ffff,
+        #ff00ff,
+        #7c3aed
+    );
+    opacity: 0;
+    filter: blur(6px);
+    z-index: 0;
+    animation: girar 1.2s linear infinite paused;
+}
+
+.brilho::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    background: #120014;
+    z-index: 1;
+}
+
+.div-principal{
+    z-index: 2;
+}
+
+.brilho.animando::before{
+    opacity: 1;
+    animation-play-state: running;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes girar{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}

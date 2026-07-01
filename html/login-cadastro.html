@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/login-cadastro.css">
+</head>
+<body>
+
+    <span><a href="index.html">&lt <span>voltar para Home</span></a></span>
+    <div class="brilho">
+        <div class="div-principal">
+            <div class="cobrir esquerda">
+                <div class="dentro-de-cobrir">
+                    <p class="cobrir-conteudo">Ainda não tem uma conta?</p>
+                    <button class="mudar-btn">Cadastre-se</button>
+                </div>
+            </div>
+            <div class="login">
+                <form action="login-form">
+                    <label for="email-login">E-mail: </label>
+                    <input type="email" name="email-login" id="email-login" required>
+
+                    <label for="password-login">Senha: </label>
+                    <input type="password" name="password-login" id="password-login" required>
+
+                    <label>
+                        <input type="checkbox">
+                        lembrar de mim
+                    </label>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="cadastro">
+                <form action="cadastro-form">
+                    <label>Nome de Usuário: </label>
+                    <input type="text" required>
+
+                    <label>E-mail: </label>
+                    <input type="email" required>
+
+                    <label>Senha: </label>
+                    <input type="password" required>
+
+                    <label>Confirmar Senha: </label>
+                    <input type="password" required>
+
+                    <label>
+                        <input type="checkbox" required>
+                        Aceito os termos
+                    </label>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/login-cadastro.js"></script>
+    
+</body>
+</html>

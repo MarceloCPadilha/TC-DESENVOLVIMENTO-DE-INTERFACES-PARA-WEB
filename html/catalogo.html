@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo</title>
+<link rel="stylesheet" href="../style/style-header.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+h1{
+    text-align:center;
+}
+
+.catalogo{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    text-decoration:none;
+    color:black;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+.info{
+    padding:15px;
+    text-align:center;
+}
+.destaque{
+    width:700px;
+    margin:0 auto 50px auto;
+}
+
+.destaque img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.destaque .info{
+    text-align:center;
+    padding:10px;
+}
+</style>
+</head>
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <img src="../img/image.png" alt="">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Info</a></li>
+            </ul>
+        </nav>
+        <button class="bt" onclick="window.location='login-cadastro.html'">Fazer Login/Cadastrar</button>
+
+    </header>
+
+    <h1>Catálogo</h1>
+
+    <div class="catalogo">
+        <a class="card destaque" href="">
+
+            <img src="https://blog.ecshop.com.br/wp-content/uploads/2017/04/cupons-de-desconto-black-friday-brasileira.png" alt="Desconto">
+
+            <div class="info">
+                <h2> Descontos Especiais</h2>
+                <p>Clique para conferir as ofertas.</p>
+            </div>
+
+        </a>
+    </div>
+
+    <div class="catalogo">
+
+
+        <a class="card" href="./especificas/valorant.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvy1oaQbh9HPpuaU4pQxKpJrdwQNuOeovoccqBWYbBVEqdvGYNQQayCo&s=10" alt="Valorant">
+            <div class="info">
+                <h2>Valorant</h2>
+            </div>
+        </a>
+
+        <a class="card" href="./especificas/bet-nacional.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqQxmF2Q8ma30r_nXQgZPQjug7slAOAo1D08JCJotQA&s=10" alt="Betnacional">
+            <div class="info">
+                <h2>Betnacional</h2>
+            </div>
+        </a>
+
+        <a class="card" href="./especificas/fortnite.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqPdgxlyEytEqH_hFNq3uiZPEsyIHqU3q1YtI-al13pA&s=10" alt="Fortnite">
+            <div class="info">
+                <h2>Fortnite</h2>
+            </div>
+        </a>
+
+        <a class="card" href="./especificas/free-fire.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6KTSfeGR1RrAelpx9SzhX_AAhbmCHAzamAr0Ja54Qw&s=10" alt="Free Fire">
+            <div class="info">
+                <h2>Free Fire</h2>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>

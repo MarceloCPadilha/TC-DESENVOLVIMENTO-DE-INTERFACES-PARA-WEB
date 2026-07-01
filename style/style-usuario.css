@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+legend,
+h2 {
+    color: #0066cc;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dados p {
+    margin-bottom: 10px;
+}
+
+.saldo {
+    font-size: 22px;
+    color: green;
+    font-weight: bold;
+}
+
+.info {
+    position: relative;
+    cursor: pointer;
+    color: #0066cc;
+}
+
+.info:hover::after {
+    content: "Saldo: R$100  Cashback: R$150";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 220px;
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.cartao {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+}
+
+.usuario-button {
+    width: 100%;
+    padding: 12px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0052a3;
+}
