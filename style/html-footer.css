@@ -25,13 +25,12 @@
 
 .footer-bloco a {
     display: block;
-    color: #ccc;
-    text-decoration: none;
+    color: #fff;
     margin-bottom: 5px;
 }
 
 .footer-bloco a:hover {
-    color: white;
+    color: yellow;
 }
 
 .footer-bottom {
