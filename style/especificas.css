@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f3f5;
+}
+
+.principal {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.section-jogo, .section-pagamentos {
+    float: left;
+    box-sizing: border-box;
+}
+
+.section-jogo {
+    width: 45%;
+    padding-right: 40px;
+}
+
+.section-pagamentos {
+    width: 55%;
+    padding-left: 40px;
+}
+
+.container {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+}
+
+.descrição {
+    max-width: 420px;
+    margin-top: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.preco {
+    margin: 10px 0;
+    color: #222;
+}
+
+.cashback {
+    color: #1e8e3e;
+    font-weight: bold;
+}
+
+.precos form select, .precos form button {
+    width: 100%;
+    display: block;
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.precos form button {
+    cursor: pointer;
+    border: 1px solid #333;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.precos form button:hover {
+    background: #eaeaea;
+}
+
+/* Para não quebrar a estrutura do site, 
+impede que o footer fique ao lado da main 
+e não no bottom do site */
+.principal::after {
+    content: "";
+    display: block;
+    clear: both;
+}
