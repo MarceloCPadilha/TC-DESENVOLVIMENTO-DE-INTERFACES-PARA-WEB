@@ -20,22 +20,12 @@ body {
 }
 
 .div-principal {
-    position: absolute;
+    position: relative;
     width: 60vw;
     height: 75vh;
     border-radius: 15px;
     overflow: hidden;
     color: white;
-}
-span, a{
-    text-decoration: none;
-    color: thistle;
-    font-size: 2rem;
-}
-span a span {
-    font-size: 1.5rem;
-    padding: auto;
-    height: 100%;
 }
 
 .cobrir {
@@ -144,12 +134,10 @@ form {
 }
 
 .brilho{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
     width: 60vw;
     height: 75vh;
+    margin: auto;
 }
 
 .brilho::before{
