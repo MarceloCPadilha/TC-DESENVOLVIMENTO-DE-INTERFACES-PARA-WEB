@@ -38,9 +38,7 @@ h2 {
 }
 
 .usuario {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    overflow: hidden;
 }
 
 .foto {
@@ -49,6 +47,12 @@ h2 {
     border: 2px solid #ccc;
     border-radius: 50%;
     object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.dados {
+    float: left;
 }
 
 .dados p {
@@ -114,6 +118,6 @@ input {
     cursor: pointer;
 }
 
-button:hover {
+.usuario-button:hover {
     background: #0052a3;
 }

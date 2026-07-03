@@ -43,10 +43,7 @@ h1{
 .fundadores{
     width:90%;
     margin:50px auto;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
+    text-align:center;
 }
 
 .card{
@@ -56,6 +53,10 @@ h1{
     border-radius:15px;
     box-shadow:0 5px 12px rgba(0,0,0,.15);
     transition:.3s;
+
+    display:inline-block;
+    vertical-align:top;
+    margin:15px;
 }
 
 .card:hover{
@@ -68,12 +69,11 @@ h1{
     border-radius:50%;
     background:#444;
     color:white;
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin:0 auto;
     font-size:40px;
     font-weight:bold;
+    line-height:120px; /* centraliza o texto verticalmente */
+    text-align:center; /* centraliza horizontalmente */
 }
 
 .card h3{
@@ -86,13 +86,13 @@ h1{
     color:#666;
 }
 
-.card a {
-    text-decoration: none;
-    color: black;
+.card a{
+    text-decoration:none;
+    color:black;
 }
 
-.card a:hover {
-    color: blue;
+.card a:hover{
+    color:blue;
 }
 
 /* Sobre */

@@ -22,9 +22,7 @@
 /* Lista de avaliações */
 
 .avaliacoes {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
 }
 
 /* Card da avaliação */
@@ -35,6 +33,7 @@
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
     transition: .3s;
+    margin-bottom: 20px;
 }
 
 .card-avaliacao:hover {
@@ -45,18 +44,18 @@
 /* Cabeçalho da avaliação */
 
 .usuario {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 
 .usuario h2 {
+    float: left;
     font-size: 1.2rem;
     color: #333;
 }
 
 .usuario span {
+    float: right;
     font-size: 1.3rem;
     color: #f1d116;
 }
@@ -67,6 +66,7 @@
     color: #555;
     line-height: 1.6;
     margin-bottom: 15px;
+    clear: both;
 }
 
 /* Data */
@@ -81,14 +81,15 @@
 
 @media (max-width: 768px) {
 
-    .usuario {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+    .usuario h2,
+    .usuario span {
+        float: none;
+        display: block;
     }
 
     .usuario span {
         font-size: 1.1rem;
+        margin-top: 8px;
     }
 
     .container {

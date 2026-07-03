@@ -80,12 +80,9 @@ nav,
     position: relative;
     float: right;
     margin-right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-width: 140px;
     height: 50%;
-    padding: 10px 30px;
+    padding: 0 30px;
     font-size: 1rem;
     color: #fff;
     background: #165bf1;
@@ -94,6 +91,8 @@ nav,
     user-select: none;
     overflow: visible;
     z-index: 100;
+    text-align: center;
+    line-height: 5vh;
 }
 
 .bt::before {

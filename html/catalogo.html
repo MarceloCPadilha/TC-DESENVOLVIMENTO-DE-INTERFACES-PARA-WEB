@@ -12,18 +12,13 @@ body{
     font-family: Arial, sans-serif;
     background:#f4f4f4;
 }
-
 h1{
     text-align:center;
 }
-
 .catalogo{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+    text-align:center;
+    margin-bottom:20px;
 }
-
 .card{
     width:250px;
     background:white;
@@ -33,34 +28,32 @@ h1{
     color:black;
     box-shadow:0 4px 10px rgba(0,0,0,.2);
     transition:.3s;
-}
 
+    display:inline-block;
+    vertical-align:top;
+    margin:10px;
+}
 .card:hover{
     transform:scale(1.05);
 }
-
 .card img{
     width:100%;
     height:180px;
     object-fit:cover;
     display:block;
 }
-
 .info{
     padding:15px;
     text-align:center;
 }
 .destaque{
     width:700px;
-    margin:0 auto 50px auto;
 }
-
 .destaque img{
     width:100%;
     height:250px;
     object-fit:cover;
 }
-
 .destaque .info{
     text-align:center;
     padding:10px;
