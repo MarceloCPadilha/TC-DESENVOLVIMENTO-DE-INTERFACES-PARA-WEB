@@ -137,7 +137,7 @@ form {
     position: relative;
     width: 60vw;
     height: 75vh;
-    margin: auto;
+    margin: 5% auto;
 }
 
 .brilho::before{
